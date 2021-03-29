@@ -1,0 +1,134 @@
+.nav-primary {
+  position:fixed;
+  height: 50px;
+  display:block;
+  width: 100%;
+  // background: #333;
+  z-index:9;
+  text-align:left;
+  color: white;
+  padding: 20px 15px 0 15px;
+  top: 0;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container a {
+  color: black;
+}
+
+.nav-brand a, img {
+  border: 0px; // Prevents border around PS logo in IE10
+  width: 100% !important;
+}
+
+.nav-brand-mobile a, img {
+  border: 0px; // Prevents border around PS logo in IE10
+}
+
+.nav-primary__logo {
+    height: 23px !important;
+    width: 125px !important;
+}
+
+.nav-title {
+  @media @mobile {
+    display: none;
+  }
+}
+
+h3.nav-title__text{
+    font-size: 15px;
+    //font-weight: 400;
+    color: #ffffff;
+    margin: 0px;
+    //text-transform: uppercase;
+}
+
+.nav-social-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-social-link{
+    display: inline-block;
+    margin: 0px 5px;
+    @media @mobile {
+      display: none;
+    }
+}
+
+.img-social-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.nav-social-link path{
+    @include transition(fill .15s linear);
+}
+
+.nav-social-link:hover path{
+    fill: #418cff;
+}
+
+.btn-nav{
+    left: 5px;
+    right: inherit;
+    bottom: 20px;
+    text-align: center;
+    line-height: 38px;
+    background-color: #eee;
+    border: none;
+    position: absolute;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #fafafa;
+    padding: 5px 15px 1px 15px;
+    margin-left: 10px;
+    outline: none;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    font-size: 13px;
+    font-weight: 500;
+    z-index: 101;
+    display: none;
+    // @media @mobile {
+    //   padding: 1px 8px 1px 8px;
+    //   font-size: 12px;
+    //   line-height: 35px;
+    // }
+}
+
+// .btn-nav:hover {
+//   background-color: @brand-blue;
+//   color: white !important;
+// }
+
+.btn-nav a {
+  color: black;
+  text-decoration: none !important;
+}
+
+.btn-nav a:hover {
+  color: black;
+  text-decoration: none !important;
+}
+
+.btn-nav-menu{
+    // padding: 7px 7px 4px 7px;
+    margin-left: 6px;
+    margin-bottom: 5px;
+    outline: none;
+    text-decoration: none !important;
+    font-size: 17px;
+}
+
+.btn-nav-menu a:hover {
+  color: #418cff;
+  text-decoration: none !important;
+}

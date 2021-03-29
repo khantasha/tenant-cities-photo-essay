@@ -1,0 +1,28 @@
+[
+  {
+    "slide_type": "title",
+    "story_number": 1,
+    "title": "To me, accessibility feels like an afterthought in Pittsburgh development",
+    "subhead": "This is the subhead for this story",
+    "author": "Natasha Khan",
+    "body": "<p>KeAnna, 32, lives in Homewood with her three children, Aubrey, 8, Christopher, 6, and Kaiden, 4.</p> \n\n<p>This is their first home together in two years. KeAnna and her children were homeless, relying on family and friends to house them while they waited for a Section 8 housing voucher.</p> \n",
+    "background": "https://s3.amazonaws.com/ps-apps-assets/lww_shayla/Shayla_0379.jpg",
+    "background_mobile": "https://s3.amazonaws.com/ps-apps-assets/lwl_shayla/Shayla_0379_mobile-1200x628.jpg",
+    "background_opacity": "linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ),"
+  },
+  {
+    "slide_type": "image",
+    "title": "slide two",
+    "body": "<p>KeAnna was eligible for a Section 8 voucher in Pittsburgh because she makes $38,000 a year and is the sole provider for a four-person household.</p>\n\n<p>The Housing Choice Voucher Program, also known as Section 8, is a federal program that assists those in need of affordable housing by paying a portion of their rent.</p>",
+    "background": "https://s3.amazonaws.com/ps-apps-assets/lww_shayla/Shayla_0475.jpg",
+    "background_mobile": "https://s3.amazonaws.com/ps-apps-assets/lww_shayla/Shayla_0379_mobile.jpg",
+    "media_embed": "https://www.youtube.com/watch?v=jH3C8FyHsIk"
+  },
+  {
+    "slide_type": "textbox",
+    "title": "slide three",
+    "body": "<p>It is common to wait on the Section 8 list for years. Housing Authority of the City of Pittsburgh must assess the eligibility of a backlog of thousands of applicants.</p>",
+    "background": "https://s3.amazonaws.com/ps-apps-assets/lww_shayla/Shayla_0475.jpg",
+    "background_mobile": "https://s3.amazonaws.com/ps-apps-assets/lww_shayla/Shayla_0379_mobile.jpg"
+  }
+]

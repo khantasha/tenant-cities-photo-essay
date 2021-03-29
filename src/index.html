@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <%= t.include("partials/_head.html", grunt.data.json) %>
+    <%= t.include("partials/_analytics.html", grunt.data.json) %>
+    <link rel="stylesheet" type="text/css" href="stylev2.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="se-pre-con"></div>
+
+    <%= t.include("partials/_nav.html") %>
+    <div id="fullpage">
+
+      <div class="section" id="section0">
+      	<% json.recyclingStory.forEach(function(slide, i) { %>
+
+      	  <% if(slide.slide_type == 'title') { %>
+          <%= t.include("partials/templates/_title.html", { slide: slide, position:i }) %>
+          <% } else if(slide.slide_type == 'textbox'){ %>
+          <%= t.include("partials/templates/_textbox.html", { slide: slide, position:i }) %>
+          <% } else if(slide.slide_type == 'image'){ %>
+          <%= t.include("partials/templates/_image.html", { slide: slide, position:i }) %>
+          <% } else if(slide.slide_type == 'video'){ %>
+          <%= t.include("partials/templates/_video.html", { slide: slide, position:i }) %>
+          <% } else if(slide.slide_type == 'audio'){ %>
+          <%= t.include("partials/templates/_audio.html", { slide: slide, position:i }) %>
+          <% } else if(slide.slide_type == 'morestories'){ %>
+          <%= t.include("partials/templates/_morestories.html", { slide: slide, position:i }) %>
+          <% } else { %>
+          <%= t.include("partials/templates/_text-only.html", { slide: slide, position:i }) %>
+          <% } %>
+        <% }); %>
+    	</div>
+
+
+    </div>
+
+    <script src="app.js" async></script>
+
+    <script>
+      function toggleVolume(clickedID) {
+        var clicked = document.getElementById(clickedID);
+        var clickedVideo = clicked.nextElementSibling;
+
+        clicked.classList.toggle('fa-volume-mute');
+
+        if(clickedVideo.muted == true){
+          clickedVideo.muted = false;
+        }else{
+          clickedVideo.muted = true;
+        }
+        //return mytune.paused ? mytune.play() : mytune.pause();
+      };
+    </script>
+    <%= t.include("partials/_analytics.html") %>
+  </body>
+</html>

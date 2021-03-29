@@ -1,0 +1,77 @@
+#mc_embed_signup {
+  border: none;
+  text-align: left;
+  width: 100%;
+} /* Signup form container */
+
+.mc-field-group {
+  display: inline-block;
+} /* positions input field horizontally */
+
+#mce-EMAIL {
+  font-family: 'Mallory', 'Helvetica Neue', Helvetica,  Arial, sans-serif;
+  font-size: .9em;
+  border: 1px solid #d6d6d6;
+  color: #343434;
+  background-color: #fff;
+  padding: .75em 4em .75em 1em;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+} /* Input Styles */
+
+.clear {
+  display: inline-block;
+} /* positions button horizontally in line with input */
+
+.cta-button {
+  font-family: 'Mallory', 'Helvetica Neue', Helvetica,  Arial, sans-serif;
+  font-size: .8em;
+  font-weight: 400;
+  letter-spacing: .03em;
+  color: #fff;
+  background-color: #fb6927;
+  padding: .7em 2em;
+  border: 4px solid #fb6927;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  display: inline-block;
+  margin: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover{
+    border: 4px solid #fb6927;
+    background-color: white;
+    color: black;
+}
+ }
+
+@media (max-width: 500px) {
+
+  .mc-field-group {
+    display: block;
+    max-width: 100%;
+  }
+  #mce-EMAIL {
+    padding: .7em 0 .7em 1em;
+    width: 100%; margin: 0;
+  }
+  .clear {
+    display: block;
+    width: 100%
+  }
+  input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  }
+  .cta-button {
+    width: 100%;
+    margin: .5em 0 0 0;
+  }
+
+}

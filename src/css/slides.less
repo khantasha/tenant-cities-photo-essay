@@ -1,0 +1,427 @@
+/* Background and overall slide style. Backgrounds will cover all the section
+* --------------------------------------- */
+.section{
+  position: relative;
+  background-size: cover;
+  text-align:center;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+// #section0{
+//   background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(https://s3.amazonaws.com/ps-apps-assets/lww_shayla/Shayla_1094.jpg);
+//   @media @mobile {
+//     background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(https://s3.amazonaws.com/ps-apps-assets/lww_shayla/mobile_Shayla_1094.jpg);
+//   }
+// }
+
+.slide{
+  position: relative;
+  background-size: cover;
+}
+
+/* Slide styles
+* --------------------------------------- */
+
+.intro h1 {
+  font-size: 6.5rem;
+  font-family: 'EB Garamond';
+  text-shadow: 1px 1px #000000;
+  @media @mobile {
+    font-size: 3.4rem;
+  }
+}
+
+.intro p {
+  margin-top: 1em;
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 1.5;
+  @media @mobile {
+    font-size: .9em;
+  }
+}
+
+// .intro p {
+//   margin-top: 2em;
+//   font-weight: 300;
+//   line-height: 1.25em;
+// }
+
+// .series-intro {
+//   // text-shadow: 1px 1.5px #000000;
+//   font-size: 14px !important;
+//   font-weight: 500 !important;
+//   text-transform: uppercase !important;
+//   text-shadow: 1px 1px #000000;
+//   @media @mobile {
+//   font-size: 12px !important;
+//   }
+// }
+
+.shaded-box{
+  position: absolute;
+  top: 25px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  background: linear-gradient( rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60) );
+  padding: 15px;
+  @media only screen and (max-width: 400px) {
+    top: 50px;
+    right: 0;
+    left: 0;
+    padding: 10px;
+  }
+  @media only screen and (min-width: 1500px) {
+    top: 25px;
+    right: 0;
+    left: 50;
+  }
+}
+
+.advance-box {
+  cursor: pointer;
+  // position: absolute;
+  // z-index: 9999;
+  // bottom:30px;
+  // left: 0;
+  // right: 0;
+  // margin: 0 auto;
+  // margin-top: 2em;
+  // bottom: -60px;
+}
+
+.advance-box p {
+  cursor: pointer;
+  font-size: 1em !important;
+  @media @mobile {
+    font-size: 13px !important;
+  }
+}
+
+.advance-box-stories {
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 3em;
+  // bottom: -60px;
+}
+
+.advance-box-stories p {
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.desktop-margin {
+  margin-top: 3em;
+  @media @mobile {
+    margin-top: 0em;
+  }
+}
+
+.desktop-show {
+  display: block;
+  @media @mobile {
+    display: none;
+  }
+}
+
+.mobile-show {
+  display: none;
+  @media @mobile {
+    display: block;
+  }
+}
+
+/* Navigation Arrows */
+
+.fp-controlArrow{
+    top:inherit;
+    margin-top: -60px;
+    background:#cccccc;
+}
+
+/*.fp-controlArrow.fp-prev {
+    right: 150px;
+    left:inherit;
+    width: 50px;
+    height: 50px;
+    background: url('../assets/arrow-left.svg') no-repeat;
+    border: none;
+    cursor: pointer;
+}
+.fp-controlArrow.fp-next {
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: url('../assets/arrow-right.svg') no-repeat;
+    border: none;
+    cursor: pointer;
+}*/
+
+.fp-controlArrow.fp-prev::before {
+    font-family: "Font Awesome 5 Pro";
+    // font-weight: 700;
+    content: '\f053';
+}
+
+.fp-controlArrow.fp-prev {
+    width: 45px;
+    height: 45px;
+    right: 95px;
+    left:inherit;
+    bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 43px;
+    background-color: #eee;
+    border: none;
+    position: absolute;
+    color: #444;
+    text-transform: uppercase;
+    cursor: pointer;
+    @media @mobile {
+     right: 75px;
+   }
+}
+
+.fp-controlArrow.fp-next::before {
+    font-family: "Font Awesome 5 Pro";
+    // font-weight: 700;
+    content: '\f054';
+}
+
+.fp-controlArrow.fp-next {
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 43px;
+    background-color: #eee;
+    border: none;
+    position: absolute;
+    color: #444;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* About template styles */
+
+.about {
+  margin-top: 4em;
+}
+
+.about p {
+  margin-top: 1em;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.5;
+  @media (max-width: 550px) {
+    font-size: .85em;
+    font-weight: 400;
+    // margin: 1em 10px 0 10px;
+  }
+  @media (max-width: 330px) {
+    font-size: .7em;
+    font-weight: 400;
+    // margin: 1em 10px 0 10px;
+  }
+}
+
+/* Title template styles */
+
+// .title p {
+//   font-size: 1.3rem;
+//   line-height: 1.6;
+//   letter-spacing: 0;
+//   text-transform: uppercase;
+//   margin-top: 2em;
+//   @media @mobile {
+//     font-size: 1.1rem;
+//   }
+// }
+
+/* Textbox template styles */
+
+/* Video template styles */
+
+#myVideo{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black; /* in case the video doesn't fit the whole page*/
+  background-image: /* our video */;
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover; /*cover video background */
+  z-index:3;
+}
+
+/*.volume-btn{
+  font-size: 1.75em;
+  padding:.675em;
+  position: absolute;
+  display:block;
+  z-index: 9999;
+  top:0;
+  right:95px;
+}*/
+
+.fa-volume,
+.fa-volume-off,
+.fa-volume-mute{
+  font-size: 1.75em;
+  padding:.675em;
+  position: absolute;
+  z-index: 9999;
+  bottom:10px;
+  right:175px;
+  @media @mobile {
+    right:125px;
+  }
+}
+
+	/* Layer with position absolute in order to have it over the video
+	* --------------------------------------- */
+	#section3 .layer{
+		position: absolute;
+		z-index: 4;
+		width: 100%;
+		left: 0;
+		top: 43%;
+		/*
+		* Preventing flicker on some browsers
+		* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+		*/
+		-webkit-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+	/*solves problem with overflowing video in Mac with Chrome */
+	#section3{
+		overflow: hidden;
+	}
+
+	/* Hiding video controls
+	* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+	* --------------------------------------- */
+	video::-webkit-media-controls {
+	  display:block !important;
+	}
+
+/* Text-only template styles */
+
+/* Interactive template styles */
+
+/* Miscellaneous */
+
+i {
+  color: white !important;
+}
+
+i:hover {
+  color: #418cff !important;
+  cursor: pointer; }
+
+/* Fixed header and footer.
+* --------------------------------------- */
+
+#footer{
+  position:fixed;
+  height: 50px;
+  display:block;
+  width: 100%;
+  // background: #333;
+  z-index:9;
+  text-align:left;
+  color: white;
+  padding: 0 0 0 20px;
+}
+
+#footer{
+  bottom:5px;
+}
+
+#footer p {
+  font-size: 1em;
+  background-color: #eee;
+  color: black;
+  padding: 8px;
+  display: inline-block;
+}
+
+/* Colors
+* --------------------------------------- */
+
+.u-blue {
+  color: #418cff !important;
+}
+
+/* Pulsing icon on title template
+* --------------------------------------- */
+.pulse {
+  display: none;
+  animation: pulse 1s infinite;
+  margin: 0 auto;
+  display: table;
+  animation-direction: alternate;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  @media @mobile {
+    display: block;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.07); }
+  100% { transform: scale(1); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.07); }
+  100% { transform: scale(1); }
+}
+
+/* Fading
+* --------------------------------------- */
+
+.fp-slidesContainer {
+	width: 100%!important;
+	transform: none!important;
+}
+
+.fp-slide {
+	width: 100%!important;
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .6s ease-in-out;
+	// z-index: 0;
+}
+
+.fp-slide.active {
+	visibility: visible;
+	opacity: 1;
+	// z-index: 1;
+}
+
+iframe {
+  height: 355px;
+  @media (max-width: 500px) {
+    height: 200px;
+  }
+}
+
+div.iScrollVerticalScrollbar.iScrollLoneScrollbar > div {
+  background: white !important;
+}

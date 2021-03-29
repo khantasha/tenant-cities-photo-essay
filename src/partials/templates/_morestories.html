@@ -1,0 +1,21 @@
+<div class="slide <%= slide.slide_type %>"  id="slide<%= position %>">
+    <div class="container">
+      <div class="row">
+        <div id="morestories" class="six columns offset-by-one">
+            <p style="text-align: left;">
+              Story by <%= slide.author %>.<br>
+              Photos by <%= slide.photographer %>.<br>
+              Design & development by Natasha Vicens<br>and Alexandra Kanik.<br>
+            </p>
+            <br>
+            <p style="text-align: left;">Visit <a href="https://publicsource.org" target="_blank">publicsource.org</a>.</p>
+            <p style="text-align: left;">This is the <%= slide.entry_number %> story in our Low-Wage Living series.<br>Follow along via our e-newsletter.</p>
+            <a href="https://publicsource.org/newsletters/" target="_blank"><button>Sign up</button></a>
+        </div>
+        <div id="morestories" class="four columns offset-by-one">
+            <img src="<%= slide.background %>" />
+            <div style="cursor: pointer !important;" id="moveDown"> <p>NEXT STORY:<br><%= slide.body %><br><i class="fal fa-angle-double-down"></i></p></div>
+        </div>
+      </div>
+    </div>
+</div>

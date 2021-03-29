@@ -1,0 +1,9 @@
+<div class="slide" id="slide<%= position %>">
+    <i onClick="toggleVolume(this.id)" class="fal fa-volume fa-volume-mute" id="volume-<%= position %>"></i>
+    <video id="myVideo" loop muted data-autoplay>
+			<source src="<%= slide.background %>" type="video/mp4">
+		</video>
+    <div class="layer">
+      <%= slide.body %>
+    </div>
+</div>

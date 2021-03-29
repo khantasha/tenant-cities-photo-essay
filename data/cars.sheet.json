@@ -1,0 +1,15 @@
+{
+  "ford": {
+    "name": "<h1>Ford</h1>",
+    "country": "U.S.A.",
+    "image": "assets/frank-mckenna-720261-unsplash.jpg"
+  },
+  "honda": {
+    "name": "Honda",
+    "country": "Japan"
+  },
+  "volvo": {
+    "name": "Volvo",
+    "country": "Sweden"
+  }
+}

@@ -1,0 +1,60 @@
+[
+  {
+    "field": "slide_type",
+    "options": "title; text; textbox; image; video; audio; interactive",
+    "default": "text",
+    "description": "What type of slide is this? This will determine which fields are evaluated and how the slide will function and look."
+  },
+  {
+    "field": "story_number",
+    "options": "[number]"
+  },
+  {
+    "field": "title",
+    "options": "[string]",
+    "default": "none",
+    "description": "The text in this field will get an <h1> emphasis if the slide_type is set to title, or and <h2> emphasis if any other type."
+  },
+  {
+    "field": "subhead",
+    "options": "[string]",
+    "default": "none",
+    "description": "The text in this field will get an <h2> emphasis if the slide_type is set to title, or and <h3> emphasis if any other type."
+  },
+  {
+    "field": "author",
+    "options": "[string]",
+    "default": "none",
+    "description": "This will be a byline when slide_type is title. Otherwise, it will be treated as a source line or credit line."
+  },
+  {
+    "field": "body",
+    "options": "[formatted string]",
+    "default": "none",
+    "description": "This field will be evaluated differently for each slide_type. HTML is permitted."
+  },
+  {
+    "field": "background",
+    "options": "[image url, hex color]",
+    "default": "#000000",
+    "description": "URL of the image you wish to use or a hex color."
+  },
+  {
+    "field": "background_opacity",
+    "options": "[number]",
+    "default": 100,
+    "description": "This field will only be evaluated if background is an image, not a color. If no value is entered, the background image will be full brightness. Value of 50 will result in a 50% black fade. 25 will result in a 75% fade. 75 will result in a 25% fade."
+  },
+  {
+    "field": "media_embed",
+    "options": "[url]",
+    "default": "none",
+    "description": "This field will only accept a URL. DO NOT INSERT ANY <IFRAME> OR <SCRIPT> TAGS IN HERE! If slide_type is set to video, this field will expect a youtube url. If slide_type set to audio, will expect soundcloud url. If slide_type set to interactive, will expect the url of a pym embed."
+  },
+  {
+    "field": "pym_id",
+    "options": "[string]",
+    "default": "none",
+    "description": "If you are using a pym embed, please include an ID that identifies this pym interactive. If you have more than one pym embed in a single project, make sure that each pym_id is different"
+  }
+]

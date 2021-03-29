@@ -1,0 +1,13 @@
+<div class="slide <%= slide.slide_type %>"  id="slide<%= position %>" data-bg-large='<%= slide.background %>' data-bg-mobile='<%= slide.background_mobile %>' data-bg-opacity='<%= slide.background_opacity %>'>
+    <div class="container">
+      <div class="row">
+        <div class="eight columns offset-by-two">
+            <%= slide.body %>
+            <audio id="mytune">
+                <source src="<%= slide.media_embed %>" type="audio/ogg">
+            </audio>
+            <p onClick="togglePlay()"><i class="fal fa-volume"></i></p>
+        </div>
+      </div>
+    </div>
+</div>

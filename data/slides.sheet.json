@@ -1,0 +1,68 @@
+[
+  {
+    "slide_type": "title",
+    "title": "jessica: story title",
+    "subhead": "This is the subhead for this story",
+    "author": "Natasha Khan",
+    "background": "#000000"
+  },
+  {
+    "slide_type": "video",
+    "title": "slide two",
+    "body": "Cipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vul.",
+    "background": "#E6611A",
+    "media_embed": "https://www.youtube.com/watch?v=jH3C8FyHsIk"
+  },
+  {
+    "slide_type": "text",
+    "title": "slide three",
+    "body": "Do not go gentle into that good night,<br>\nOld age should burn and rave at close of day;<br>\nRage, rage against the dying of the light",
+    "background": "https://payload.cargocollective.com/1/0/4579/12920283/IllustrationChronicles_KatheKollwitz_Battlefireld_1907_1500.jpg",
+    "background_opacity": 50
+  },
+  {
+    "slide_type": "title",
+    "title": "brandon: story title",
+    "subhead": "More details about this story"
+  },
+  {
+    "slide_type": "text",
+    "title": "slide two",
+    "body": "Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. <strong>Gratuitous octopus niacin, sodium glutimate.</strong> Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex"
+  },
+  {
+    "slide_type": "image",
+    "title": "Weavers on the March (1897)",
+    "author": "Kathe Kollowitz",
+    "background": "https://s3-us-west-2.amazonaws.com/uama/wp-content/uploads/2013/02/30034251/1988.004.001_m.jpg"
+  },
+  {
+    "slide_type": "text",
+    "title": "slide four"
+  },
+  {
+    "slide_type": "audio",
+    "title": "slide five",
+    "media_embed": "https://api.soundcloud.com/tracks/568693080"
+  },
+  {
+    "slide_type": "text",
+    "title": "slide six"
+  },
+  {
+    "slide_type": "interactive",
+    "title": "slide seven"
+  },
+  {
+    "slide_type": "video",
+    "title": "slide eight"
+  },
+  {
+    "slide_type": "text",
+    "title": "slide nine"
+  },
+  {
+    "slide_type": "text",
+    "title": "slide ten"
+  }
+]

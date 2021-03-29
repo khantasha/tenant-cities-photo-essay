@@ -1,0 +1,26 @@
+{
+  "s3": {
+    "stage": {
+      "bucket": "ps-apps-staging",
+      "path": "low-wage-living"
+    },
+    "live": {
+      "bucket": "ps-apps-production",
+      "path": "low-wage-living"
+    }
+  },
+  "styles": {
+    "src/css/seed.less": "build/stylev2.css"
+  },
+  "scripts": {
+    "src/js/main.js": "build/app.js"
+  },
+  "title": "Low-wage living",
+  "description": "We set out to hear the realities and perceptions of people working in low-wage industries in the Pittsburgh region. Here’s what we learned.",
+  "url": "https://lowwageworkerspgh.publicsource.org/",
+  "image": "https://projects.publicsource.org/pittsburgh-recycling/",
+  "sheets": ["1Y124YWGk1KL5iDhgAbGDyhs7KduKsn1T_HEAFdJVWTE"],
+  "docs": [],
+  "embedded": true,
+  "production": false
+}

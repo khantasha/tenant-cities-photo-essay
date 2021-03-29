@@ -1,0 +1,17 @@
+<div class="slide <%= slide.slide_type %>"  id="slide<%= position %>" data-bg-large='<%= slide.background %>' data-bg-mobile='<%= slide.background_mobile %>' data-bg-opacity='<%= slide.background_opacity %>'>
+  <div class="container">
+    <div class="row">
+      <div class="ten columns offset-by-one">
+        <div class="title">
+          <!-- <h5><em>Story <%= slide.story_number %></em></h5> -->
+          <h1><%= slide.title %></h1>
+          <!-- <p style="font-size: .9em; text-transform: uppercase;"><%= slide.author %></p> -->
+          <div style="margin-top: 2.5em;" class="mobile-show">
+            <img class="pulse" style="color: white; width: 30px !important; height: 30px !important;" src="https://s3.amazonaws.com/ps-apps-assets/low-wage-living/swipe.svg">
+            <p style="font-size: .78em;">(Swipe through or use arrows)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
