@@ -15,46 +15,71 @@
     <div id="fullpage">
 
       <div class="section" id="section0">
-      	<% json.recyclingStory.forEach(function(slide, i) { %>
-
-      	  <% if(slide.slide_type == 'title') { %>
-          <%= t.include("partials/templates/_title.html", { slide: slide, position:i }) %>
-          <% } else if(slide.slide_type == 'textbox'){ %>
-          <%= t.include("partials/templates/_textbox.html", { slide: slide, position:i }) %>
-          <% } else if(slide.slide_type == 'image'){ %>
-          <%= t.include("partials/templates/_image.html", { slide: slide, position:i }) %>
-          <% } else if(slide.slide_type == 'video'){ %>
-          <%= t.include("partials/templates/_video.html", { slide: slide, position:i }) %>
-          <% } else if(slide.slide_type == 'audio'){ %>
-          <%= t.include("partials/templates/_audio.html", { slide: slide, position:i }) %>
-          <% } else if(slide.slide_type == 'morestories'){ %>
-          <%= t.include("partials/templates/_morestories.html", { slide: slide, position:i }) %>
-          <% } else { %>
-          <%= t.include("partials/templates/_text-only.html", { slide: slide, position:i }) %>
-          <% } %>
-        <% }); %>
+        <div class="top-container">
+          <div class="top-headline">
+            <h1>Tenant cities: Photo essay headline would go here and it would be so good we would cry</h1>
+          </div>
+          <div class="top-gallery">
+            <div id="slide-container">
+              <div id="slide-first-element">
+                <img class="slide-image" src="https://www.publicsource.org/wp-content/uploads/2021/03/IMG_1631.jpg">
+              </div>
+              <div id="slide-element-2">
+                <img class="slide-image" src="https://www.publicsource.org/wp-content/uploads/2021/03/IMG_1655.jpg">
+              </div>
+              <div id="slide-element-3">
+                <img class="slide-image" src="https://www.publicsource.org/wp-content/uploads/2021/03/IMG_1834.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
     	</div>
 
+      <div class="section" id="section1">
+        <div class="text-container">
+          <div class="text">
+            <p class="credits">Photos by Jay Manning<br>
+            Text by Jay Manning and Rich Lord<br>
+            <b>April 1, 2021</b>
+            </p>
+            <div class="divider"></div>
+            <p>A pandemic that impacted income for many families also prompted federal, state and local actions to reduce evictions. But a far-reaching full moratorium gave way to much more limited restrictions, even as many renters continued to struggle. The results included more than 3,200 eviction cases filed by landlords in Allegheny County in the past year, sending some tenants scrambling amid COVID-19 and a longstanding affordable housing crisis.</p>
+
+            <p>Since January, PublicSource and WESA have been spending time with households facing eviction, as part of the <a href="https://www.publicsource.org/series/tenant-cities/">Tenant Cities series</a>. We’ve seen tenants try to tap rent relief, scrape to make payments, or take the difficult step of trying to move during a pandemic. Here are portraits of five households we’ve met.</p>
+          </div>
+        </div>
+    	</div>
+
+      <div class="section" id="section2">
+        <div class="title-container">
+          <div class="title">
+            <div class="title-words">
+              <h1>Shanese Nelson</h1>
+              <p>Her landlord filed to evict her in January 2020.</p>
+            </div>
+          </div>
+          <div class="title-image">
+            <img src="https://www.publicsource.org/wp-content/uploads/2021/03/IMG_1631.jpg">
+          </div>
+        </div>
+    	</div>
+
+      <div class="section" id="section3">
+        <div class="text-container">
+          <div class="text">
+            <p>Shanese Nelson said she’d been renting from her cousin, Todd Davis, since January 2020 and had complained to him about the unfinished state of the Penn Hills apartment – raw wood, unpainted drywall, leaky plumbing,  and more loose light fixtures, closed doors that did not open or close readily and holes in walls.</p>
+
+            <p>When her lease expired in January 10 – even though her rent was current and the pandemic was raging – Davis filed a landlord/tenant complaint against her.
+
+            <p>Davis did not comment for the record when contacted by PublicSource.</p>
+          </div>
+        </div>
+    	</div>
 
     </div>
 
     <script src="app.js" async></script>
 
-    <script>
-      function toggleVolume(clickedID) {
-        var clicked = document.getElementById(clickedID);
-        var clickedVideo = clicked.nextElementSibling;
-
-        clicked.classList.toggle('fa-volume-mute');
-
-        if(clickedVideo.muted == true){
-          clickedVideo.muted = false;
-        }else{
-          clickedVideo.muted = true;
-        }
-        //return mytune.paused ? mytune.play() : mytune.pause();
-      };
-    </script>
     <%= t.include("partials/_analytics.html") %>
   </body>
 </html>

@@ -6,9 +6,9 @@ var pym = require("./lib/pym");
 ////////// fullPage.js
 // Optional. When using fullPage extensions
 // require("./lib/fullpage.dragAndMove.min.js");
-require("./lib/fullpage.scrollHorizontally.min");
+// require("./lib/fullpage.scrollHorizontally.min");
 require("./lib/fullpage.fadingEffect.min.js");
-require("./lib/scrolloverflow.js");
+// require("./lib/scrolloverflow.js");
 
 // Optional. When using scrollOverflow:true
 // require('fullpage.js/vendors/scrolloverflow');
@@ -22,35 +22,27 @@ var fullpage = require("./lib/fullpage.extensions.min");
 // Initializing it
 var myFullpage = new fullpage('#fullpage', {
     licenseKey: 'D8303C79-0BD64932-AEC886F3-4E1AAB2D',
-    anchors: ['page'],
-    sectionsColor: ['#000000'],
+    anchors: ['1', '2', '3'],
+    sectionsColor: ['#000000', '#fff', '#fff'],
     slidesNavigation:true,
     navigation: true,
     navigationPosition: 'right',
-    //verticalCentered: false,
-    //navigationTooltips: ['First page', 'Second page', 'Third and last page'],
-    // responsiveWidth: 900,
     animateAnchor: false,
     autoScrolling: true,
     keyboardScrolling: true,
+    loopHorizontal:false,
+    //verticalCentered: false,
+    //navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+    // responsiveWidth: 900,
     // scrollingSpeed: 0,
-    scrollOverflow: true,
+    // scrollOverflow: true,
     // dragAndMove: true,
-    scrollHorizontally: true,
+    // scrollHorizontally: true,
     // fadingEffect:'slides',
     // fadingEffectKey: 'bG93d2FnZXdvcmtlcnNwZ2gucHVibGljc291cmNlLm9yZ190OUFabUZrYVc1blJXWm1aV04wUUUz',
-    scrollHorizontallyKey: 'cHJvamVjdHMucHVibGljc291cmNlLm9yZ19HeHJjMk55YjJ4c1NHOXlhWHB2Ym5SaGJHeDU4NG4=',
+    // scrollHorizontallyKey: 'cHJvamVjdHMucHVibGljc291cmNlLm9yZ19HeHJjMk55YjJ4c1NHOXlhWHB2Ym5SaGJHeDU4NG4=',
     // dragAndMoveKey: 'bG93d2FnZXdvcmtlcnNwZ2gucHVibGljc291cmNlLm9yZ18wdDdaSEpoWjBGdVpFMXZkbVU9NDV2',
-    loopHorizontal:false,
-    afterResize: function(width, height){
-  		var fullpageContainer = this;
-  	},
-  	afterLoad: function(origin, destination, direction) {
-    	var sectionURL = origin.item.baseURI;
-    	var googleURL = sectionURL.replace('https://lowwageworkerspgh.publicsource.org', '');
-    	console.log(googleURL);
-      ga('send', 'pageview', { 'page': googleURL, 'title': googleURL });
-    }
+
 });
 
 // new fullpage('#fullpage', {
@@ -124,6 +116,6 @@ determineScreenSize();
 // fullpage_api.setScrollingSpeed(0);
 
 //adding the movedown action to the button
-$(document).on('click', '#moveDown', function(){
-  fullpage_api.moveSectionDown();
-});
+// $(document).on('click', '#moveDown', function(){
+//   fullpage_api.moveSectionDown();
+// });
