@@ -22,8 +22,9 @@ var fullpage = require("./lib/fullpage.extensions.min");
 // Initializing it
 var myFullpage = new fullpage('#fullpage', {
     licenseKey: 'D8303C79-0BD64932-AEC886F3-4E1AAB2D',
-    anchors: ['1', '2', '3'],
-    sectionsColor: ['#000000', '#fff', '#fff'],
+    anchors: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25'
+  ],
+    sectionsColor: ['#000000', '#fff', '#000000', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#000000', '#fff', '#fff', '#fff', '#000000', '#fff', '#fff', '#fff', '#fff', '#000000', '#fff', '#fff', '#fff', '#000000'],
     slidesNavigation:true,
     navigation: true,
     navigationPosition: 'right',
