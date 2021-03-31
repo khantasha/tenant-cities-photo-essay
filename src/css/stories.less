@@ -11,10 +11,11 @@
 }
 
 .top-headline h1 {
-  max-width: 500px;
+  font-size: 3.3em;
+  font-family: @crimson;
+  max-width: 600px;
   color: white;
   padding: 20px;
-  font-size: 2.2em;
   @media @mobile {
     font-size: .95em;
     text-align: left;
@@ -44,9 +45,6 @@
     font-size: 17px;
     width: 90%;
   }
-}
-
-.text p {
 }
 
 .credits {
@@ -123,11 +121,9 @@
 //side by side images with caption in middle
 .sidebyside-container {
   display: grid;
-  grid-template-columns: 1fr 300px 1fr;
+  grid-template-columns: 1fr 1fr;
   text-align: left;
   @media @mobile {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 100px 1fr;
   }
 }
 
@@ -149,7 +145,7 @@
   font-family: @mallory;
   font-weight: 300;
   font-size: 1em;
-  max-width: 200px;
+  max-width: 275px;
   color: black;
   padding: 20px;
   @media @mobile {
@@ -185,4 +181,20 @@
 
 .singleimage-left-image1 {
   padding: 30px;
+}
+
+//tenant cities logo and credits
+.series {}
+
+.series img {
+  max-width: 200px;
+}
+
+.series p {
+  font-size: 1.3em;
+}
+
+.series-credits {
+  color: white;
+  text-align: center !important;
 }
