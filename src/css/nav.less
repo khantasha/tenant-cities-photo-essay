@@ -10,6 +10,9 @@
   background-color: black;
   padding: 13px 15px 0 35px;
   top: 0;
+  @media @mobile {
+    padding: 13px 10px 10px 10px;
+  }
 }
 
 .nav-container{
@@ -53,6 +56,9 @@ h3.nav-title__text{
 .nav-social-links{
     display: flex;
     align-items: center;
+    @media @mobile {
+      display: none;
+    }
 }
 
 .nav-social-link{
@@ -95,7 +101,7 @@ h3.nav-title__text{
     text-transform: uppercase;
     text-decoration: none !important;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 400;
     z-index: 101;
     display: none;
     // @media @mobile {

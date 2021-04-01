@@ -2,6 +2,10 @@
 .top-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @media @mobile {
+    grid-template-columns: 1fr;
+    grid-template-rows: 125px 1fr;
+  }
 }
 
 .top-headline{
@@ -13,13 +17,12 @@
 .top-headline h1 {
   font-size: 3.2em;
   font-family: @crimson;
+  font-weight: 600;
   max-width: 500px;
   color: white;
   padding: 20px;
   @media @mobile {
-    font-size: .95em;
-    text-align: left;
-    padding: 20px;
+    font-size: 1.5em;
   }
 }
 
@@ -42,7 +45,7 @@
   font-family: @crimson;
   font-size: 17px;
   @media @mobile {
-    font-size: 17px;
+    font-size: 16px;
     width: 90%;
   }
 }
@@ -54,13 +57,21 @@
   line-height: 1.5;
   @media @mobile {
   font-size: .6em !important;
+  line-height: 1.2;
   }
+}
+
+.credits p {
+
 }
 
 .divider {
   border-top: 1px solid grey;
   width: 20%;
   margin-bottom: 5px;
+  @media @mobile {
+    margin-bottom: 0px;
+  }
 }
 
 //title slide with image
@@ -84,9 +95,9 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  padding: 20px;
+  padding: 10px;
   @media @mobile {
-    padding: 0;
+    text-align: center;
   }
 }
 
@@ -96,8 +107,8 @@
   font-weight: 600;
   color: white;
   @media @mobile {
-    font-size: 2.6em;
-    margin-left: 20px;
+    font-size: 2em;
+    margin-left: 5px;
   }
 }
 
@@ -107,7 +118,7 @@
   color: white;
   @media @mobile {
     font-size: 14px;
-    margin-left: 20px;
+    margin-left: 5px;
   }
 }
 
@@ -129,10 +140,16 @@
 
 .sidebyside-image1 {
   padding: 30px;
+  @media @mobile {
+    padding: 3px;
+  }
 }
 
 .sidebyside-image2 {
   padding: 30px;
+  @media @mobile {
+    padding: 3px;
+  }
 }
 
 .sidebyside-text {
@@ -184,17 +201,42 @@
 }
 
 //tenant cities logo and credits
-.series {}
+.series {
+  color:white;
+}
 
 .series img {
-  max-width: 200px;
+  max-width: 190px;
+  margin-top: 2em;
+  @media @mobile {
+  max-width: 150px;
+  }
 }
 
 .series p {
-  font-size: 1.3em;
+  font-size: 1.1em;
+  @media @mobile {
+    font-size: 13.5px;
+    padding: 10px;
+  }
 }
 
 .series-credits {
   color: white;
   text-align: center !important;
+}
+
+.show-desktop {
+  display: block;
+  @media @mobile {
+    display: none;
+  }
+}
+
+.show-mobile {
+  display: none;
+  padding: 20px;
+  @media @mobile {
+    display: block;
+  }
 }
